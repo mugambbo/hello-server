@@ -1,4 +1,4 @@
-# HTTP NOTIFICATION SYSTEM: PUBLISHER
+# HTTP Notification System: Publisher
 This application is part of an HTTP notification system developed using the Java Spring Framework. 
 This is the publisher of the application and serves as the entry point for communication between the client and subscribers. See subscriber application [here](https://github.com/mugambbo/hello-subscriber).
 
@@ -56,6 +56,8 @@ When it succeeds, a 200 status code is returned along with the data object in th
 }
 ```
 
-#Test
+# Test
 While the publisher and subscriber are running, execute the following in your terminal:
+```
 curl -X POST -H "Content-Type: application/json" -d '{ "url": "http://localhost:9000/test1"}' http://localhost:8000/subscribe/topic1 curl -X POST -H "Content-Type: application/json" -d '{ "url": "http://localhost:9000/test2"}' http://localhost:8000/subscribe/topic1 curl -X POST -H "Content-Type: application/json" -d '{"message": "hello"}' http://localhost:8000/publish/topic1
+```
