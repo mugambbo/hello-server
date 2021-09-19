@@ -12,12 +12,12 @@ This is the publisher of the application and serves as the entry point for commu
 # Run
 The easiest way to start an instance of the Publisher is through github:
 ```
-git clone https://github.com/mugambbo/hello-subscriber
-cd hello-subscriber
+git clone https://github.com/mugambbo/hello-server
+cd hello-server
 ./gradlew bootRun
 ```
 
-This will start an instance of the subscriber on port 8000
+This will start an instance of the publisher on port 8000
 
 # Endpoints
 Important: Content-Type: application/json header must be present to use API.
